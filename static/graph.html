@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>people death rate in US due to cancer (state wise)</title>
+    <link rel="icon" type='image/x-icon' href="/static/analytics.ico">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    img{
+        max-width: 1200px;
+        width: 100%;
+        max-height: 700px;
+        height: 100%;
+    }
+    .graph-image{
+        padding: 10px;
+        background-color: #B2BEB5;
+    }
+    .div-dataset{
+        background-color: #B2BEB5;
+        font-size: 1.2rem;
+    }
+    .state-wise-name{
+        background-color: white;
+        padding: 50px;
+        text-align: center;
+    }
+    .about-dataset{
+        background-color: #B2BEB5;
+        padding: 50px;
+    }
+    .footer-content h3{
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+    }
+    footer{
+        background: #111;
+        height: auto;
+        width: 100%;
+        font-family: "Open Sans";
+        padding-top: 40px;
+        color: white;
+    }
+    .footer-content , .footer-bottom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="graph">
+        <div class="graph-image">
+            <center>
+                <img src="/static/graph.png" alt="death_rate_of_cancer_patients_in_us">
+            </center>
+        </div>
+        <div class="div-dataset">  
+            <div class="state-wise-name">
+                <h1>List of US State's and their Postal Abbreviation</h1>
+                <p>
+                    Alabama : AL <br>
+                    Alaska : AK <br>
+                    Arizona : AZ<br>
+                    Arkansas : AR<br>
+                    California : CA<br>
+                    Colorado : CO<br>
+                    Connecticut	: CT<br>
+                    Washington , DC : DC<br>
+                    Delaware : DE<br>
+                    Florida : FL<br>
+                    Georgia : GA<br>
+                    Hawaii : HI<br>
+                    Idaho	: ID<br>
+                    Illinois : IL<br>
+                    Indiana : IN<br>
+                    Iowa : IA<br>
+                    Kansas : KS<br>
+                    Kentucky : KY<br>
+                    Louisiana : LA<br>
+                    Maine	: ME<br>
+                    Maryland : MD<br>
+                    Massachusetts : MA<br>
+                    Michigan : MI<br>
+                    Minnesot : MN<br>
+                    Mississippi : MS<br>
+                    Missour : MO<br>
+                    Montana : MT<br>
+                    Nebraska : NE<br>
+                    Nevada : NV<br>
+                    New Hampshire : NH<br>
+                    New Jersey : NJ<br>
+                    New Mexico : NM<br>
+                    New York : NY<br>
+                    North Carolina : NC<br>
+                    North Dakota : ND<br>
+                    Ohio : OH<br>
+                    Oklahoma : OK<br>
+                    Oregon : OR<br>
+                    Pennsylvania : PA<br>
+                    Rhode Island : RI<br>
+                    South Carolina : SC<br>
+                    South Dakota : SD<br>
+                    Tennessee : TN<br>
+                    Texas	: TX<br>
+                    Utah : UT<br>
+                    Vermont : VT<br>
+                    Virginia : VA<br>
+                    Washington : WA<br>
+                    West Virginia : WV<br>
+                    Wisconsin : WI<br>
+                    Wyoming : WY<br>
+                </p>
+            </div>
+            <div class="about-dataset">
+                <h1>
+                    About the dataset used for above line plot , 
+                </h1>
+                <p><b>DESCRIPTION</b>
+                    <br><br>
+                    The rates are the numbers out of 100,000 people who developed or died from cancer each year.
+                    <br><br>
+                    <b>SUMMARY</b>
+                    <br><br>
+                    In the following maps, the U.S. states are divided into groups based on the rates at which people developed or died from cancer in 2013, the most recent year for which incidence data are available.
+                   <br><br>
+                    The rates are the numbers out of 100,000 people who developed or died from cancer each year.
+                    <br><br>
+                    <b>RATES BY STATES</b>
+                    <br><br>
+                    The number of people who get cancer is called cancer incidence. In the United States, the rate of getting cancer varies from state to state.
+                    <ul>
+                        <li>*Rates are per 100,000 and are age-adjusted to the 2000 U.S. standard population.</li>
+                        <li>‡Rates are not shown if the state did not meet USCS publication criteria or if the state did not submit data to CDC.</li>
+                        <li>†Source: U.S. Cancer Statistics Working Group. United States Cancer Statistics: 1999–2013 Incidence and Mortality Web-based Report. Atlanta (GA): Department of Health and Human Services, Centers for Disease Control and Prevention, and National Cancer Institute; 2016. Available at: http://www.cdc.gov/uscs.</li>
+                    </ul>
+                </p>
+                <a href="https://data.world/adamhelsinger/cancer-rates-by-u-s-state" style="text-decoration : none; color:grey;">click here to get dataset</a>
+            </div>
+        </div>
+    </div>
+    <footer >
+        <div class="footer-content">
+            <h3>Line Plot Which Shows People Death Rate Due to Cancer In US State's</h3>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023. designed by <span>Prajwal Arjun Sonkavde</span></p>
+        </div>
+    </footer>
+</body>
+</html>

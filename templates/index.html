@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Detection</title>
+    <link rel="icon" type='image/x-icon' href="/static/title_icon.ico">
+    <link rel="stylesheet" href={{url_for('static',filename='style.css')}}>
+    <!-- for icon of social media sites https://cdnjs.com/libraries/font-awesome-->
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+    <h1 class="main_title">Breast Cancer Detection</h1>
+    <div class="input">
+        <form action="." method="POST">
+            <label for="name" class="in">Name : </label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="age" class="in">Age : </label>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <label class="in" for="race">Race : </label>
+            <select name="race" id="race" required>
+                <option value=1 >Other (American Indian/AK Native, Asian/Pacific Islander)</option>
+                <option value=2 >White</option>
+                <option value=3 >Black</option>
+            </select><br><br>
+
+            <label class="in" for="marital_status">Marital Status : </label>
+            <select name="marital_status" id="marital_status" required>
+                <option value=1 >Married (including common law)</option>
+                <option value=2 >Divorced</option>
+                <option value=3 >Single (never married)</option>
+                <option value=4 >Windowed</option>
+                <option value=5 >Separated</option>
+            </select><br><br>
+
+            <label class="in" for="t-stage">T Stage : </label>
+            <select name="t-stage" id="t-stage" required>
+                <option value=1 >T2</option>
+                <option value=2 >T1</option>
+                <option value=3 >T3</option>
+                <option value=4 >T4</option>
+            </select><br><br>
+
+
+            <label class="in" for="n-stage">N Stage : </label>
+            <select name="n-stage" id="n-stage" required>
+                <option value=1 >N3</option>
+                <option value=2 >N2</option>
+                <option value=3 >N1</option>
+            </select><br><br>
+
+            <label class="in" for="6th-stage">6th Stage : </label>
+            <select name="6th-stage" id="6th-stage" required>
+                <option value=1 >IIIC</option>
+                <option value=2 >IIIA</option>
+                <option value=3 >IIB</option>
+                <option value=4 >IIA</option>
+                <option value=5 >IIIB</option>
+            </select><br><br>
+
+            <label class="in" for="grade">Grade A Stage : </label>
+            <select name="grade" id="grade" required>
+                <option value=1 >Moderately differentiated; Grade II</option>
+                <option value=2 >Poorly differentiated; Grade III</option>
+                <option value=3 >Well differentiated; Grade I</option>
+                <option value=4 >Undifferentiated; anaplastic; Grade IV</option>
+            </select><br><br>
+
+            <label class="in" for="a_stage">A Stage : </label>
+            <select name="a_stage" id="a_stage" required>
+                <option value=1 >Regional</option>
+                <option value=2 >Distant</option>
+            </select><br><br>
+
+            <label for="tumor_size" class="in">Tumor Size : </label>
+            <input type="number" id="tumor_size" name="tumor_size" required><br><br>
+
+            <label class="in" for="estrogen_status">Estrogen Status : </label>
+            <select name="estrogen_status" id="estrogen_status" required>
+                <option value=1 >Positive</option>
+                <option value=2 >Negative</option>
+            </select><br><br>
+
+
+            <label class="in" for="progesterone_status">Progesterone Status : </label>
+            <select name="progesterone_status" id="progesterone_status" required>
+                <option value=1 >Positive</option>
+                <option value=2 >Negative</option>
+            </select><br><br>
+
+            <label class="in" for="regional_node_examined">Regional Node Examined : </label>
+            <input type="number" id="regional_node_examined" name="regional_node_examined" required><br><br>
+
+            <label class="in" for="regional_node_positive">Regional Node Positive : </label>
+            <input type="number" id="regional_node_positive" name="regional_node_positive" required><br><br>
+
+            <label class="in" for="survived_months">Survival Months : </label>
+            <input type="number" id="survived_months" name="survived_months" required><br><br>
+
+            <input type="submit" class="submit" value="Submit">
+        </form>
+    </div>
+    <div class="info_dataset">
+        <h2 class="about_dataset">About Dataset</h2>
+        <p>
+            This dataset of breast cancer patients was obtained from the 2017 November update of the SEER Program of the NCI, which provides information on population-based cancer statistics. The dataset involved female patients with infiltrating duct and lobular carcinoma breast cancer diagnosed in 2006-2010. Patients with unknown tumour size, examined regional LNs, positive regional LNs, and patients whose survival months were less than 1 month were excluded, thus 4024 patients were ultimately included.
+        </p>
+        <a href="https://zenodo.org/record/5120960#.ZAs3vnZBy3B" style="text-decoration : none; color:grey;">click here to get dataset</a>
+    </div>
+
+    <div class="graph-for-death-rate">
+        <center>
+            <h2>People Rates due to cancer in US States</h2>
+            <form action="/static/graph.html">
+                <input class="datasert-button" type="submit" value="Click here">
+            </form>
+        </center>
+    </div>
+
+    <div class="about_yourself">
+        <div class="yourself">
+            <img src="/static/asd.jpg" class="prajwal_arjun_sonkavde" alt="Image of Prajwal Arjun Sonkavde">
+            <p class="info_yourself">I'm Prajwal Arjun Sonkavde and I'm an aspiring data science student , Currently I'm pursuing my B-tech. this api predicts whether the person has breast cancer , after all analysis and applying different models with different parameters on dataset, Random forest with decision tree as estimator is performing very well</p>
+        </div>
+    </div>
+
+    <footer >
+        <div class="footer-content">
+            <h3>Breast Cancer Detection</h3>
+            <p>Through  this api you check whether the person has breast cancer </p>
+            <ul class="socials">
+                <li><a href="https://www.linkedin.com/in/prajwal-sonkavde-948832205/" style="text-decoration : none;"><i class="fa-brands fa-linkedin" ></i></a></li>
+                <li><a href="https://github.com/PrajwalSonkavde" style="text-decoration : none;"><i class="fa-brands fa-github"></i></a></li>
+                <li></li>
+            </ul>
+            <p><i class="fa-brands fa-instagram"></i> User ID : prajwal_sonkavde</p>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023. designed by <span>Prajwal Arjun Sonkavde</span></p>
+        </div>
+    </footer>
+</body>
+</html>
