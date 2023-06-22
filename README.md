@@ -7,23 +7,23 @@ Here a user interface is created through which people can give the details and i
 ![Screenshot 2023-03-22 165847](https://user-images.githubusercontent.com/99462259/226891030-bd7643db-0cc6-430a-80ba-5d0172bd1a1b.png)
 
 
-The provided code represents a Flask web application for breast cancer detection. It uses a trained Random Forest model to predict whether a person has breast cancer based on various input features. Here is a description that you can use for the GitHub repository:
+code is Written in such a way which represents a Flask web application for breast cancer detection. It uses a trained Random Forest model to predict whether a person has breast cancer based on various input features. Here is a description that you can use for the GitHub repository:
 Breast Cancer Detection Web Application<br>
 
 This is a Flask-based web application that allows users to determine the likelihood of having breast cancer using machine learning. The application uses a trained Random Forest model to predict the presence of breast cancer based on user input.<br>
 Functionality:<br><br>
 
-    User-friendly interface for inputting relevant information
-    Trained Random Forest model for accurate predictions
-    Interactive visualization of cancer death rates in different US states
+    -> User-friendly interface for inputting relevant information
+    -> Trained Random Forest model for accurate predictions
+    -> Interactive visualization of cancer death rates in different US states
 
 How it works:<br><br>
 
-    Users input their personal information, including name, age, race, marital status, tumor stage, grade, and other relevant factors.
-    The application processes the input data and passes it through the trained Random Forest model.
-    The model predicts whether the user is likely to have breast cancer or not.
-    The result is displayed on the screen, indicating the probability of having breast cancer.
-    Additionally, the application provides a graph that shows the death rates due to cancer in different US states.
+    -> Users input their personal information, including name, age, race, marital status, tumor stage, grade, and other relevant factors.
+    -> The application processes the input data and passes it through the trained Random Forest model.
+    -> The model predicts whether the user is likely to have breast cancer or not.
+    -> The result is displayed on the screen, indicating the probability of having breast cancer.
+    -> Additionally, the application provides a graph that shows the death rates due to cancer in different US states.
 
 Dataset:<br><br>
 
@@ -31,9 +31,9 @@ The breast cancer dataset used for training the model was obtained from the 2017
 
 How to Use:<br><br>
 
-    Clone the repository to your local machine.
-    Make sure you have Python and Flask installed.
-    Run the main file app.py to start the Flask server.
-    Access the application through your web browser at http://localhost:5000.
-    Fill in the required information and click the "Submit" button.
-    The application will display the prediction result on the screen.
+    -> Clone the repository to your local machine.
+    -> Make sure you have Python and Flask installed.
+    -> Run the main file app.py to start the Flask server.
+    -> Access the application through your web browser at http://localhost:5000.
+    -> Fill in the required information and click the "Submit" button.
+    -> The application will display the prediction result on the screen.
